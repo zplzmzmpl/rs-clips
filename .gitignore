@@ -27,3 +27,5 @@ _clips_checkpoint.json
 # Dataset index (auto-generated)
 dataset_index/
 hf_dataset/
+# Test data (not tracked)
+test/
