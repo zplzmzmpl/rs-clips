@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tiling output (users generate these)
+output/
+clips/
+
+# Checkpoint files
+_clips_checkpoint.json
+
+# Dataset index (auto-generated)
+dataset_index/
+hf_dataset/
