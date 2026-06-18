@@ -1,6 +1,9 @@
 # RS-Clips
 
 A remote sensing image tiling tool for deep learning — crop large GeoTIFF rasters into training-ready tile datasets.
+<div align = 'center'>
+    <img src = 'CleanShot 2026-06-18 at 20.00.02@2x.png' alt = 'web preview'>
+</div>
 
 ## Features
 
