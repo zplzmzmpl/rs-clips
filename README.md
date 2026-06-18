@@ -130,22 +130,6 @@ output/
 │   └── README.md          # Dataset card with metadata
 ```
 
-## Key Improvements Over the Original Script
-
-| Aspect | Before | After |
-|--------|--------|-------|
-| Source file I/O | Opens source raster twice per tile | Single open per tile |
-| Edge padding | Python for-loop, row by row | `np.pad(mode='edge')` — one call |
-| Edge threshold | Hardcoded 0.9 | Configurable via UI/CLI |
-| Visualization | None | Thumbnail + grid + NoData heatmap |
-| Pre-run estimate | None | Tile count, disk usage, grid layout |
-| Resume | None | Checkpoint every 50 tiles |
-| Architecture | Logic/UI/CLI coupled | Layered: core ↔ preview ↔ app/cli |
-| Progress | tqdm text only | Streamlit progress bar / CLI real-time % |
-| NoData insight | Print only | NoData distribution heatmap + statistics |
-| Batch processing | Not supported | Multiple image pairs in one run |
-| Training packaging | Not supported | PyTorch Dataset / HuggingFace JSONL |
-
 ## Parameters Reference
 
 | Parameter | CLI Flag | Default | Description |
